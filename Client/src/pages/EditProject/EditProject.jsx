@@ -1,0 +1,29 @@
+import React from "react";
+import Appbar from "../../components/PageLayout/Appbar";
+import SideNav from "../../components/PageLayout/SideNav";
+import CardContent from '@mui/material/CardContent';
+import Card from '@mui/material/Card';
+import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
+import EditProjectForm from "../../components/Form/EditProjectForm";
+
+
+export default function EditProject() {
+  return (
+    <>
+      <Appbar />
+      <Box height={30} />
+      <Box sx={{ display: 'flex' }}>
+        <SideNav />
+        <Box component="main" sx={{ flexGrow: 1, p: 8 }}>
+          
+              <Stack spacing={2}>
+                
+                    <EditProjectForm />
+                  
+              </Stack>      
+        </Box>
+      </Box>
+    </>
+  )
+}
